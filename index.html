@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Moto Rent</title>
+    <link rel="icon" href="images/icon.png" class="to-white">
+</head>
+
+<body class="flex flex-col min-h-screen h-full bg-[#1b1b1b]">
+    <!--NAV BAR FOR MOBILE AND TABLET-->
+    <div class="first-black 2xl:hidden">
+        <div class="top flex flex-wrap m-3 mt-4 text-white justify-between items-center">
+            <div class="logo pl-1 font-bioRhyme space-x-2 md:ml-10 md:text-xl lg:text-2xl"><span
+                    class="M-logo text-[#c9e93f] font-semibold">M</span>oto<span
+                    class="R-logo text-[#c9e93f] font-semibold">R</span>ent</div>
+            <div class="contact shadow-[0_10px_15px_-4px_rgba(255,255,255,0.3)] md:mr-10"><button
+                    class="bg-gray-200 text-black px-6 py-1 rounded-md text-sm font-poppins font-normal active:bg-gray-400 hover:bg-gray-400 md:text-xl lg:text-2xl">Contact
+                    Us</button>
+            </div>
+        </div>
+        <div class="nav">
+            <ul
+                class="text-[#fbf8f8] text-md font-poppins font-normal flex flex-wrap mx-3 mt-10 mb-5 px-10 justify-between md:px-20 md:text-xl lg:text-2xl">
+                <li class="hover:text-[#c9e93f] hover:cursor-pointer">Home</li>
+                <li class="hover:text-[#c9e93f] hover:cursor-pointer">Our Services</li>
+                <li class="hover:text-[#c9e93f] hover:cursor-pointer">Join Us</li>
+            </ul>
+        </div>
+        <div
+            class="stats text-sm font-poppins font-normal flex flex-col mt-7 px-14 justify-between items-center space-y-10 md:mt-10 lg:mt-14">
+            <div class="carsCount flex flex-col items-center justify-center lg:space-y-3">
+                <div class="carsNum text-4xl text-gray-200 font-semibold lg:text-[3rem]" data-target="500">0</div>
+                <div class="carsNumHead text-[#e5dfdf] md:text-lg lg:text-2xl">Number of Cars</div>
+            </div>
+            <div class="clientsCount flex flex-col items-center justify-center lg:space-y-3">
+                <div class="clientsNum text-4xl text-gray-200 font-semibold lg:text-[3rem]" data-target="25000">0</div>
+                <div class="clientsNumHead text-[#e5dfdf] md:text-lg lg:text-2xl">Clients Served</div>
+            </div>
+        </div>
+    </div>
+
+    <!--NAV BAR FOR DESKTOP (1400px +)-->
+    <div class="second-black hidden 2xl:flex 2xl:flex-col font-poppins">
+        <div class="new-top flex flex-wrap m-3 mt-4 text-white justify-between items-center">
+            <div class="new-logo pl-1 font-bioRhyme space-x-2 md:ml-10 md:text-xl lg:text-2xl 2xl:text-xl">
+                <span class="N-logo text-[#c9e93f] font-semibold">M</span>oto
+                <span class="T-logo text-[#c9e93f] font-semibold">R</span>ent
+            </div>
+            <div class="new-nav flex space-x-24 text-2xl 2xl:text-xl">
+                <div class="home hover:text-[#c9e93f] hover:cursor-pointer">Home</div>
+                <div class="services hover:text-[#c9e93f] hover:cursor-pointer">Our Services</div>
+                <div class="join hover:text-[#c9e93f] hover:cursor-pointer">Join Us</div>
+            </div>
+            <div class="new-contact shadow-[0_10px_15px_-4px_rgba(255,255,255,0.3)] md:mr-10">
+                <button class="bg-gray-200 text-black px-6 py-1 rounded-md text-sm font-poppins font-normal active:bg-gray-400 hover:bg-gray-400 md:text-xl lg:text-2xl 2xl:text-xl">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+        <div class="new-stats text-sm font-poppins font-normal flex mt-7 self-center md:mt-10 lg:mt-14">
+            <div class="new-carsCount flex flex-col items-center justify-center lg:space-y-3 lg:pr-24">
+                <div class="carsNum text-4xl text-gray-200 font-semibold lg:text-[3rem] 2xl:text-[2.5rem]" data-target="500">0</div>
+                <div class="new-carsNumHead text-[#e5dfdf] md:text-lg lg:text-2xl 2xl:text-xl">Number of Cars</div>
+            </div>
+            <div class="new-clientsCount flex flex-col items-center justify-center lg:space-y-3 lg:pl-24">
+                <div class="clientsNum text-4xl text-gray-200 font-semibold lg:text-[3rem] 2xl:text-[2.5rem]" data-target="25000">0</div>
+                <div class="new-clientsNumHead text-[#e5dfdf] md:text-lg lg:text-2xl 2xl:text-xl">Clients Served</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="slider relative overflow-hidden mx-auto w-full max-w-[64rem] flex flex-col justify-center lg:max-w-full">
+            <div class="slides flex transition-transform ease-in-out duration-100 mt-20 lg:mt-24 2xl:mt-16">
+                <div class="slide min-w-full box-border flex justify-center items-center">
+                    <img src="images/1.png" alt="Slide 1" class="w-full drop-shadow-[0px_30px_50px_rgba(255,255,255,0.5)] max-w-[64rem] self-center 2xl:max-w-[40rem]">
+                </div><!--drop-shadow-[0px_10px_30px_rgba(30,81,123,0.5)]-->
+                <div class="slide min-w-full box-border flex justify-center items-center">
+                    <img src="images/2.png" alt="Slide 2" class="w-full drop-shadow-[0px_30px_50px_rgba(255,255,255,0.5)] max-w-[64rem] self-center 2xl:max-w-[40rem]">
+                </div><!--drop-shadow-[0px_10px_20px_rgba(217,30,24,0.5)]-->
+                <div class="slide min-w-full box-border flex justify-center items-center">
+                    <img src="images/3.png" alt="Slide 3" class="w-full drop-shadow-[0px_30px_50px_rgba(255,255,255,0.5)] max-w-[64rem] self-center 2xl:max-w-[40rem]">
+                </div><!--drop-shadow-[0px_10px_30px_rgba(255,76,48,0.5)]-->
+                <div class="slide min-w-full box-border flex justify-center items-center">
+                    <img src="images/4.png" alt="Slide 4" class="w-full drop-shadow-[0px_30px_50px_rgba(255,255,255,0.5)] max-w-[64rem] self-center 2xl:max-w-[40rem]">
+                </div><!--drop-shadow-[0px_10px_30px_rgba(255,240,0,0.5)]-->
+            </div>
+            <div class="carNameBox opacity-1 text-center relative h-8 whitespace-nowrap">
+                <span id="carBNTag"
+                    class="text-[#c9e93f] text-lg font-poppins font-semibold mb-2 absolute top-0 md:text-3xl lg:text-4xl 2xl:text-3xl">BMW
+                    Serie 8 Coupé</span>
+                <span id="carCNTag"
+                    class="text-[#c9e93f] text-lg font-poppins font-semibold mb-2 absolute top-0 md:text-3xl lg:text-4xl 2xl:text-3xl">Chevrolet
+                    Corvette</span>
+                <span id="carLNTag"
+                    class="text-[#c9e93f] text-lg font-poppins font-semibold mb-2 absolute top-0 md:text-3xl lg:text-4xl 2xl:text-3xl">Lamborghini
+                    Revuelto</span>
+                <span id="carMNTag"
+                    class="text-[#c9e93f] text-lg font-poppins font-semibold mb-2 absolute top-0 md:text-3xl lg:text-4xl 2xl:text-3xl">Mc
+                    Laren 600LT</span>
+            </div>
+            <div class="carNameBox opacity-1 text-center relative h-8 whitespace-nowrap md:mt-3 lg:mt-5">
+                <span id="carBNTag"
+                    class="text-[#c9e93f] text-lg font-poppins font-semibold mb-2 absolute top-0 md:text-3xl lg:text-4xl 2xl:text-3xl">99$/day -
+                    2000$/month</span>
+                <span id="carCNTag"
+                    class="text-[#c9e93f] text-lg font-poppins font-semibold mb-2 absolute top-0 md:text-3xl lg:text-4xl 2xl:text-3xl">179$/day -
+                    4500$/month</span>
+                <span id="carLNTag"
+                    class="text-[#c9e93f] text-lg font-poppins font-semibold mb-2 absolute top-0 md:text-3xl lg:text-4xl 2xl:text-3xl">349$/day -
+                    9000$/month</span>
+                <span id="carMNTag"
+                    class="text-[#c9e93f] text-lg font-poppins font-semibold mb-2 absolute top-0 md:text-3xl lg:text-4xl 2xl:text-3xl">299$/day -
+                    8000$/month</span>
+            </div>
+            <div class="contact shadow-[0_10px_15px_-1px_rgba(201,233,63,0.3)] self-center mt-2 mb-5 md:mt-10 "><button
+                    class="bg-[#c9e93f] text-black px-6 py-1 rounded-md text-sm font-poppins font-normal active:bg-[#a3b74d] hover:bg-[#a3b74d] md:text-2xl lg:text-3xl 2xl:text-2xl">Book
+                    Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flex-1">
+        <div
+            class="moto text-gray-200 text-sm font-poppins font-normal mx-3 mt-2 md:mt-5 mb-5 text-center whitespace-nowrap overflow-hidden md:text-2xl lg:text-3xl 2xl:text-2xl">
+            <span id="typewriter">"</span>
+        </div>
+        <div class="location-section1 bg-[#5d5d5d] p-6 rounded-t-3xl mx-auto mt-6 max-w-4xl text-center font-poppins md:hidden">
+            <div class="flex flex-row items-center justify-center">
+                <h2 class="text-lg font-semibold inline text-gray-200 md:text-2xl 2xl:text-3xl">Book Your Car</h2>
+            </div>
+            <hr class="my-4 border-gray-400">
+            <div class="flex flex-col justify-center items-center space-y-4 md:space-y-0 md:flex-row md:space-x-8">
+                <div class="flex flex-col justify-center items-center">
+                    <div class="locationHead flex flex-row md:text-xl">
+                        <label for="location" class="block text-md font-semibold text-gray-200">Choose a
+                            Location</label>
+                        <img src="images/location.png" alt="loc" class="ml-2 w-5">
+                    </div>
+                    <select id="location" name="location"
+                        class="mt-1 p-2 pl-0 w-full rounded border-none bg-[#5d5d5d] text-gray-200 focus:outline-none hover:cursor-pointer md:text-lg">
+                        <option value="pakistan">Pakistan</option>
+                        <option value="united-kingdom">United Kingdom</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="dubai">Dubai</option>
+                    </select>
+                </div>
+                <div class="hidden md:w-[2px] md:bg-gray-400 md:flex-shrink-0 md:block md:h-20"></div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="PickupHead flex flex-row md:text-xl">
+                        <label for="pickup-date" class="block text-md font-semibold text-gray-200">Pick Up Date</label>
+                        <img src="images/calendar.png" alt="loc" class="ml-1 w-5 md:w-6">
+                    </div>
+                    <input type="date" id="pickup-date" name="pickup-date"
+                        class="mt-1 p-2 w-full bg-[#5d5d5d] text-gray-200 hover:cursor-text focus:outline-none md:text-lg">
+                </div>
+                <div class="hidden md:w-[2px] md:bg-gray-400 md:flex-shrink-0 md:block md:h-20"></div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="PickupHead flex flex-row md:text-xl">
+                        <label for="pickup-date" class="block text-md font-semibold text-gray-200">Return Date</label>
+                        <img src="images/calendar.png" alt="loc" class="ml-1 w-5 md:w-6">
+                    </div>
+                    <input type="date" id="return-date" name="return-date"
+                        class="mt-1 p-2 w-full bg-[#5d5d5d] text-gray-200 hover:cursor-text focus:outline-none md:text-lg">
+                </div>
+
+                <hr class="my-4 border-gray-400 w-full md:hidden">
+                <div class="shadow-[0_10px_15px_-1px_rgba(201,233,63,0.3)] self-center mt-2 mb-5 md:mt-10 md:hidden">
+                    <button
+                        class="bg-[#c9e93f] text-black px-7 py-2 rounded-md text-sm font-poppins font-normal active:bg-[#a3b74d] hover:bg-[#a3b74d] md:text-2xl lg:text-3xl">Book
+                        Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block section-wrapper bg-[#5d5d5d] p-6 rounded-t-3xl max-w-full mt-6 text-center font-poppins">
+            <div class="hidden header md:flex md:flex-row items-center justify-center">
+                <h2 class="title text-lg font-semibold inline text-gray-200 md:text-2xl lg:text-3xl 2xl:text-2xl">Book Your Car</h2>
+            </div>
+            <hr class="hidden md:block divider my-4 border-gray-400">
+            <div class="content hidden md:flex md:flex-row md:space-x-8 md:justify-center md:items-center md-lg:space-x-14 lg:space-x-6 2xl:space-x-28">
+                <div class="location flex flex-col justify-center items-center">
+                    <div class="location-label flex flex-row md:text-xl lg:text-2xl 2xl:text-xl">
+                        <label for="location" class="block text-md font-semibold text-gray-200">Choose a Location</label>
+                        <img src="images/location.png" alt="loc" class="ml-2 w-5 lg:w-6">
+                    </div>
+                    <select id="location" name="location"
+                        class="location-select mt-1 p-2 pl-0 w-full rounded border-none bg-[#5d5d5d] text-gray-200 focus:outline-none hover:cursor-pointer md:text-lg lg:text-2xl 2xl:text-xl">
+                        <option value="pakistan">Pakistan</option>
+                        <option value="united-kingdom">United Kingdom</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="dubai">Dubai</option>
+                    </select>
+                </div>
+                <div class="divider-line hidden md:w-[2px] md:bg-gray-400 md:flex-shrink-0 md:block md:h-20"></div>
+                <div class="pickup flex flex-col justify-center items-center">
+                    <div class="pickup-label flex flex-row md:text-xl lg:text-2xl 2xl:text-xl">
+                        <label for="pickup-date" class="block text-md font-semibold text-gray-200">Pick Up Date</label>
+                        <img src="images/calendar.png" alt="loc" class="ml-1 w-5 md:w-6 lg:w-7">
+                    </div>
+                    <input type="date" id="pickup-date" name="pickup-date"
+                        class="pickup-input mt-1 p-2 w-full bg-[#5d5d5d] text-gray-200 hover:cursor-text focus:outline-none md:text-lg lg:text-2xl 2xl:text-xl">
+                </div>
+                <div class="divider-line hidden md:w-[2px] md:bg-gray-400 md:flex-shrink-0 md:block md:h-20"></div>
+                <div class="return flex flex-col justify-center items-center">
+                    <div class="return-label flex flex-row md:text-xl lg:text-2xl 2xl:text-xl">
+                        <label for="return-date" class="block text-md font-semibold text-gray-200">Return Date</label>
+                        <img src="images/calendar.png" alt="loc" class="ml-1 w-5 md:w-6 lg:w-7">
+                    </div>
+                    <input type="date" id="return-date" name="return-date"
+                        class="return-input mt-1 p-2 w-full bg-[#5d5d5d] text-gray-200 hover:cursor-text focus:outline-none md:text-lg lg:text-2xl 2xl:text-xl">
+                </div>
+            </div>
+            <div class="hidden button-wrapper shadow-[0_10px_15px_-1px_rgba(201,233,63,0.3)] self-center mt-5 md:mt-6 md:inline-block">
+                <button
+                    class="book-button bg-[#c9e93f] text-black px-7 py-2 rounded-md text-sm font-poppins font-normal active:bg-[#a3b74d] hover:bg-[#a3b74d] md:text-xl md-lg:text-2xl lg:text-[1.7rem] 2xl:text-2xl">Book Now</button>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+</body>
+
+</html>
